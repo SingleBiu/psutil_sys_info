@@ -1,0 +1,2 @@
+# psutil_sys_info
+使用psutil库编写的获取系统信息的代码
