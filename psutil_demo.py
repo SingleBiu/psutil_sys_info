@@ -2,6 +2,7 @@ import psutil
 
 print("CPU物理核心:",psutil.cpu_count(logical=False))
 print("CPU逻辑数量:",psutil.cpu_count())
+print("CPU使用占比:",psutil.cpu_percent(interval=1),"%")
 mem = psutil.virtual_memory()
 print("内存总量:",round(mem.total/1024/1024/1024,2),"GB")
 print("内存使用量:",round(mem.used/1024/1024/1024,2),"GB")
